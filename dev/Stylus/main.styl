@@ -99,254 +99,60 @@ inputs = #ededed
 .icon-angle-right
     &:before
         content "\f105"
-.icon-movistar
-    sprite($movistar)
-.icon-westernUnion
-    sprite($westernUnion)
-.icon-mapfre
-    sprite($mapfre)
-.icon-claro
-    sprite($claro)
-.icon-grupoCoen
-    sprite($grupoCoen)
-.icon-ListoMarketing
-    sprite($ListoMarketing)
-.icon-comoEnviarDinero
-    sprite($comoEnviarDinero)
-.icon-comoRecibirDinero
-    sprite($comoRecibirDinero)
-.icon-tarjetasPrepago
-    sprite($tarjetasPrepago)
-.icon-caracteristicas
-    sprite($caracteristicas)
-.icon-comoObtenerla
-    sprite($comoObtenerla)
-.icon-comoRecargarla
-    sprite($comoRecargarla)
-.icon-beneficios
-    sprite($beneficios)
-.icon-masterCard
-    sprite($masterCard)
-.icon-recarga
-    sprite($recarga)
 
-.texto
-    p
-        margin-bottom .8rem
-
-// HEADER INICIO
+//HEADER
 header
-    background-color azul-oscuro
-    padding 2rem 0
-    text-align center
-    color white
-    .logotipo
-        margin-bottom 1rem
-    .infoCliente
-        p
-            font-family OSansBold
-        span
-            padding 0 .5rem
-            display inline-block
-            font-size rems(18)
-            &:before
-                color azul-claro
-                vertical-align middle
-                padding-right 8px
-    .redesSociales
-        ul
-            margin 1rem auto 0 auto
-            li
-                alinear()
-                margin 0 .5rem
-                a
-                    &:link
-                    &:visited
-                        color azul-claro
-                        font-size 2.5rem
-        .formulario
-            margin-top 1rem
-            select
-                border 1px solid azul-claro
-                color azul-claro
-                background-color transparent
-                padding .3rem .8rem
-                width rems(180)
-// HEADER FIN
-
-// SLIDER INICIO
-.slider
-    background-color azul-claro
-    .wrap
-        font-size 0
-        img
-            max-width 100%
-            height auto
-.banner-principal
-    background-color azul-claro
-    min-height 6rem
-    .wrap
-        background linear-gradient(top, azul-gradiente, azul-claro)
-        position relative
-        hgroup
-            text-align center
-            h4
-            h5
-                margin 0
-            h4
-                font-family OSansLight
-                font-size rems(34)
-            h5
-                font-family OSansBold
-                font-size rems(50)
-                text-transform uppercase
-        .imagen
-            font-size 0
-            text-align center
-            img
-                max-width 100%
-                height auto
-// SLIDER FIN
-// MAPA INICIO
-.mapa
-    max-height rems(350)
-    iframe
-        max-width 100%
-// MAPA FIN
-// SERVICIOS INICIO
-section
-    padding 2rem 1rem
-.servicios
-    article
-        max-width rems(286)
-        background-color azul-oscuro
-        border-bottom 10px solid gris
-        height rems(280)
-        margin 2rem auto
+    .row
         figure
-            font-size 0
-            margin 0
-        .titulo
-            background-color black
-            text-align right
-            clearfix()
-            height rems(60)
-            h2
-                alinear()
-                color white
-                max-width rems(230)
-                text-align left
-                float left
-                padding 0 .8rem .5rem 1rem
-                box-sizing border-box
-                font-size rems(22)
-            .boton
-                alinear()
-                text-align center
-                width rems(56)
-                background-color azul-claro
-                height 100%
-                a
-                    &:link
-                    &:visited
-                        display inline-block
-                        font-size 1.5rem
-                        color white
-                        padding .9rem
-        .contenido
-            text-align left
-            color white
-            box-sizing border-box
-            padding 1rem
-// SERVICIOS FIN
-// ALIADOS INICIO
-.aliados
-    background-color gris
-    text-align center
-    ul
+            border-right 1px solid rgba(0,0,0,.2)
+            height 109px
+            text-align: center
+        .menu
+            ul
+                text-align: center
         li
+            text-transform: uppercase
+            a
+                &:hover
+                    text-decoration none
+        button
+            background-color: transparent
+            border 0
             span
-                margin 1rem auto
-// ALIADOS FIN
-
-// SECCION PRINCIPAL INICIO
-section
-    &.principal
-        h1
-        h3
-            text-align center
-            margin-bottom 1rem
-        h3
+                font-size: 2.2rem
+        a        
             span
-                centrar()
-        ul
-            li
-                &:before
-                    content "\f0da"
-                    color amarillo
-                    font-family icomoon
-                    padding-right .5rem
-                ul
-                    margin 1rem
-                    list-style-type disc
-                    li
-                        &:before
-                            content ""
-        .imagen
-            text-align center
-            margin-bottom 2.3rem
-            img
-                max-width 100%
-                height auto
-        .icon-masterCard
-        .icon-recarga
-            centrar()
-
-// SECCION PRINCIPAL FIN
-
-
-// FOOTER INICIO
-footer
-    background-color gris-footer
-    color white
-    text-align center
-    padding 2rem 1rem
-    span
-        margin .6rem auto
-    .contacto
-        span
-            padding 0 .5rem
-            display inline-block
-            font-size rems(14)
-            &:before
-                color azul-claro
+                font-size: 2.2rem
+        .menu2Mobile
+            border 1px solid rgba(0, 0, 0, .2)
+        .countries
+        .user
+        .form
+            border-top 1px solid rgba(0, 0, 0, .2)
+            border-bottom 1px solid rgba(0, 0, 0, .2)
+            border-right 1px solid rgba(0, 0, 0, .2)
+        .menu2Mobile
+        .countries
+        .user
+        .form
+            height 41px
+            text-align: center
+            padding 0
+            span
+                line-height 1.5
+        .form
+            position relative
+            button
+            input
+                display inline-block
                 vertical-align middle
-                padding-right 8px
-    article
-        margin-bottom 1.2rem
-        h3
-            color azul-claro
-        ul
-            width rems(200)
-            margin-left auto
-            margin-right auto
-            li
-                text-align left
-                font-family OSansLight
-                margin .7rem 0
-                &:before
-                    content "\f0da"
-                    color azul-claro
-                    font-family icomoon
-                    padding-right .5rem
-                a
-                    &:link
-                    &:visited
-                        color white
-                    &:hover
-                        text-decoration underline
-// FOOTER FIN
+            button
+                width 30%
+            input
+                border 0
+                width 67%
 
+//HEADER FIN
 @media screen and (min-width:768px)
     header
         &.medium
