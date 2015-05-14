@@ -8,7 +8,6 @@
 
 @import 'normalize.styl'
 @import 'fonts.styl'
-@import '_sprite.styl'
 @import 'nib'
 
 html
@@ -17,6 +16,7 @@ body
     font-family OSansReg, arial
     font-weight 400
     font-size 16px
+    color gris
 a
     &:link
     &:visited
@@ -29,6 +29,15 @@ h3
 figure
     margin 0
     padding 0
+// COLORS
+azul-oscuro = #062138
+azul-claro = #006ac7
+gris = #393e41
+gris-footer= #24262c
+azul-gradiente = #4da5f1
+amarillo = #d0bb00
+inputs = #ededed
+
 rems(pixel)
     (pixel/16)rem
 alinear()
@@ -37,6 +46,36 @@ alinear()
 centrar()
     margin-left auto
     margin-right auto
+.button
+    text-align: center
+.btn-trans
+    text-transform: uppercase
+    max-width 248px
+    width 100%
+    text-align: center
+    color gris
+    font-size: 18px
+    border 3px solid gris
+    display inline-block
+    padding-top 1.5rem
+    margin-left auto
+    margin-top: 2rem
+    margin-right: auto
+    padding-bottom: 1.5rem
+    &:hover
+        text-decoration: none
+        background-color: gris
+        color white
+    &.yellow
+        border 3px solid #fffe00
+        color #fffe00
+        &:hover
+            background-color: #fffe00
+            color white
+.yellow-box
+    background-color: #fffe00
+.yellow-box2
+    background-color: #ffea00
 h1
 h2
 h3
@@ -52,53 +91,7 @@ ul
     list-style none
 
 
-// COLORS
-azul-oscuro = #062138
-azul-claro = #006ac7
-gris = #c7c7c7
-gris-footer= #24262c
-azul-gradiente = #4da5f1
-amarillo = #d0bb00
-inputs = #ededed
 
-[class^="icon-"], [class*=" icon-"]
-    font-family 'icomoon'
-    speak none
-    font-style normal
-    font-weight normal
-    font-variant normal
-    text-transform none
-    line-height 1
-    -webkit-font-smoothing antialiased
-    -moz-osx-font-smoothing grayscale
-
-.icon-twitter
-    &:before
-        content "\f081"
-
-.icon-facebook
-    &:before
-        content "\f082"
-
-.icon-phone
-    &:before
-        content "\f095"
-
-.icon-caret-down
-    &:before
-        content "\f0d7"
-
-.icon-caret-right
-    &:before
-        content "\f0da"
-
-.icon-envelope
-    &:before
-        content "\f0e0"
-
-.icon-angle-right
-    &:before
-        content "\f105"
 
 //HEADER
 header
@@ -153,6 +146,117 @@ header
                 width 67%
 
 //HEADER FIN
+
+// BANNER INICIO
+.banner
+    background-image: url("../img/banner.jpg")
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    background-attachment: fixed
+    height auto
+    figure
+        text-align: center
+    p
+        font-size: 6rem
+        color white
+        text-align: center
+        margin 0
+    .wrap
+        padding-top: 7rem
+        padding-bottom: 7rem
+        text-align: center
+        h2
+            font-family: TR-Reg
+            font-size: 60px
+            color white
+            text-transform: uppercase
+// BANNER FIN
+
+// STAY UPDATED INICIO
+.stayUpdated
+    text-align: center
+    background-image: url("../img/pattern.png")
+    padding-top 1.5rem
+    padding-bottom: 1.5rem
+    p
+        text-transform: uppercase
+        font-size: 14px
+        span
+            text-transform: none
+            font-size: 24px
+    .social
+        li
+            alinear()
+            padding-right 3rem
+            &:last-child
+                padding-right: 0
+        a
+            span
+                color gris
+                font-size: 4rem
+// STAY UPDATED FIN
+
+// SHOW INICIO
+.show
+    background-color: gris
+    padding-top: 4rem
+    padding-bottom: 4rem
+    h3
+        font-family: TR-Reg
+        font-size: 36px
+        text-align: center
+        position relative
+        color white
+        margin-bottom: 2rem
+        &:after
+            display block
+            content ""
+            background-image: url("../img/divider.png")
+            background-repeat: no-repeat
+            background-position: center center
+            height 8px
+    .texto
+        color white
+        font-size: 16px
+        p
+            padding 1.5rem 0
+    .boxes
+        div
+            padding .5rem 1rem
+            p
+                font-family: TR-Reg
+                font-size: 17px
+                color gris
+// SHOW FIN
+
+// TOUR INICIO
+.tour
+    background-image: url("../img/twitterBG.jpg")
+    background-repeat: no-repeat
+    background-position: center center
+    background-size cover
+    background-attachment: fixed
+    padding-top: 4rem
+    padding-bottom: 4rem
+    h3
+        font-family: TR-Reg
+        font-size: 36px
+        text-align: center
+        position relative
+        color white
+        margin-bottom: 2rem
+        &:after
+            display block
+            content ""
+            background-image: url("../img/divider.png")
+            background-repeat: no-repeat
+            background-position: center center
+            height 8px
+    .row
+        & > div
+            margin-bottom: .5rem
+// TOUR FIN
 @media screen and (min-width:768px)
     header
         &.medium

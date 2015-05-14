@@ -12,7 +12,8 @@ body {
 
 figure,
 header,
-nav {
+nav,
+section {
   display: block;
 }
 
@@ -64,31 +65,24 @@ input {
 }
 
 @font-face {
-  font-family: icomoon;
+  font-family: TR-ital;
   font-weight: normal;
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');
+  src: url("../fonts/rough_typewriter-itl-webfont.eot");
+  src: url("../fonts/rough_typewriter-itl-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/rough_typewriter-itl-webfont.woff") format('woff'),url("../fonts/rough_typewriter-itl-webfont.ttf") format('truetype'),url("../fonts/rough_typewriter-itl-webfont.svg#rough_typewriter-itl-webfont") format('svg');
 }
 
 @font-face {
-  font-family: OSansBold;
+  font-family: TR-Bold;
   font-weight: normal;
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-bold-webfont.woff") format('woff'),url("../fonts/opensans-bold-webfont.ttf") format('truetype'),url("../fonts/opensans-bold-webfont.svg#opensans-bold-webfont") format('svg');
+  src: url("../fonts/rough_typewriter-bld-itl-webfont.eot");
+  src: url("../fonts/rough_typewriter-bld-itl-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/rough_typewriter-bld-itl-webfont.woff") format('woff'),url("../fonts/rough_typewriter-bld-itl-webfont.ttf") format('truetype'),url("../fonts/rough_typewriter-bld-itl-webfont.svg#rough_typewriter-bld-itl-webfont") format('svg');
 }
 
 @font-face {
-  font-family: OSansLight;
+  font-family: TR-Reg;
   font-weight: normal;
-  src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-light-webfont.woff") format('woff'),url("../fonts/opensans-light-webfont.ttf") format('truetype'),url("../fonts/opensans-light-webfont.svg#opensans-light-webfont") format('svg');
-}
-
-@font-face {
-  font-family: OSansReg;
-  font-weight: normal;
-  src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-regular-webfont.woff") format('woff'),url("../fonts/opensans-regular-webfont.ttf") format('truetype'),url("../fonts/opensans-regular-webfont.svg#opensans-regular-webfont") format('svg');
+  src: url("../fonts/rough_typewriter-webfont.eot");
+  src: url("../fonts/rough_typewriter-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/rough_typewriter-webfont.woff") format('woff'),url("../fonts/rough_typewriter-webfont.ttf") format('truetype'),url("../fonts/rough_typewriter-webfont.svg#rough_typewriter-webfont") format('svg');
 }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -105,7 +99,8 @@ body {
 
 figure,
 header,
-nav {
+nav,
+section {
   display: block;
 }
 
@@ -164,6 +159,7 @@ body {
   font-family: OSansReg,arial;
   font-weight: 400;
   font-size: 16px;
+  color: gris;
 }
 
 a:link,
@@ -173,9 +169,68 @@ a:visited {
 
 ul,
 p,
+h2,
+h3,
 figure {
   margin: 0;
   padding: 0;
+}
+
+.button {
+  text-align: center;
+}
+
+.btn-trans {
+  text-transform: uppercase;
+  max-width: 248px;
+  width: 100%;
+  text-align: center;
+  color: #393e41;
+  font-size: 18px;
+  border: 3px solid #393e41;
+  display: inline-block;
+  padding-top: 1.5rem;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-right: auto;
+  padding-bottom: 1.5rem;
+}
+
+.btn-trans:hover {
+  text-decoration: none;
+  background-color: #393e41;
+  color: #fff;
+}
+
+.btn-trans.yellow {
+  border: 3px solid #fffe00;
+  color: #fffe00;
+}
+
+.btn-trans.yellow:hover {
+  background-color: #fffe00;
+  color: #fff;
+}
+
+.yellow-box {
+  background-color: #fffe00;
+}
+
+.yellow-box2 {
+  background-color: #ffea00;
+}
+
+h2,
+h3 {
+  font-family: OSansBold;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-size: 1.125rem;
 }
 
 ul {
@@ -258,4 +313,156 @@ header .row .form button {
 header .row .form input {
   border: 0;
   width: 67%;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+}
+
+.banner figure {
+  text-align: center;
+}
+
+.banner p {
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.banner .wrap {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+.banner .wrap h2 {
+  font-family: TR-Reg;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.stayUpdated {
+  text-align: center;
+  background-image: url("../img/pattern.png");
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.stayUpdated p {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.stayUpdated p span {
+  text-transform: none;
+  font-size: 24px;
+}
+
+.stayUpdated .social li {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 3rem;
+}
+
+.stayUpdated .social li:last-child {
+  padding-right: 0;
+}
+
+.stayUpdated .social a span {
+  color: #393e41;
+  font-size: 4rem;
+}
+
+.show {
+  background-color: #393e41;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.show h3 {
+  font-family: TR-Reg;
+  font-size: 36px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.show h3:after {
+  display: block;
+  content: "";
+  background-image: url("../img/divider.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 8px;
+}
+
+.show .texto {
+  color: #fff;
+  font-size: 16px;
+}
+
+.show .texto p {
+  padding: 1.5rem 0;
+}
+
+.show .boxes div {
+  padding: .5rem 1rem;
+}
+
+.show .boxes div p {
+  font-family: TR-Reg;
+  font-size: 17px;
+  color: #393e41;
+}
+
+.tour {
+  background-image: url("../img/twitterBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.tour h3 {
+  font-family: TR-Reg;
+  font-size: 36px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.tour h3:after {
+  display: block;
+  content: "";
+  background-image: url("../img/divider.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 8px;
+}
+
+.tour .row > div {
+  margin-bottom: .5rem;
+}
+
+@media screen and (min-width:1000px) {
+  .wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 58.75rem;
+  }
 }
