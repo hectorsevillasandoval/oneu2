@@ -11,13 +11,25 @@
 @import 'nib'
 
 html
-    font-size 16px
+    font-size 16px !important
+// COLORS
+azul-oscuro = #062138
+gris-claro = #a9b7b7
+gris = #393e41
+gris-footer= #24262c
+azul-gradiente = #4da5f1
+amarillo = #fffe00
+inputs = #ededed
+OSansReg = "Open Sans"
+
 body
     font-family OSansReg, arial
     font-weight 400
     font-size 16px
     color gris
+
 a
+    color gris
     &:link
     &:visited
         text-decoration none
@@ -29,14 +41,7 @@ h3
 figure
     margin 0
     padding 0
-// COLORS
-azul-oscuro = #062138
-azul-claro = #006ac7
-gris = #393e41
-gris-footer= #24262c
-azul-gradiente = #4da5f1
-amarillo = #d0bb00
-inputs = #ededed
+
 
 rems(pixel)
     (pixel/16)rem
@@ -46,6 +51,9 @@ alinear()
 centrar()
     margin-left auto
     margin-right auto
+    
+.img-responsive
+    centrar()
 .button
     text-align: center
 .btn-trans
@@ -57,11 +65,12 @@ centrar()
     font-size: 18px
     border 3px solid gris
     display inline-block
-    padding-top 1.5rem
+    padding-top 1rem
+    font-weight: 700
     margin-left auto
     margin-top: 2rem
     margin-right: auto
-    padding-bottom: 1.5rem
+    padding-bottom: 1rem
     &:hover
         text-decoration: none
         background-color: gris
@@ -76,17 +85,7 @@ centrar()
     background-color: #fffe00
 .yellow-box2
     background-color: #ffea00
-h1
-h2
-h3
-h4
-    font-family OSansBold
-h1
-    font-size rems(24)
-h2
-    font-size rems(22)
-h3
-    font-size rems(18)
+
 ul
     list-style none
 
@@ -100,7 +99,14 @@ header
             border-right 1px solid rgba(0,0,0,.2)
             height 109px
             text-align: center
+            display table-cell
+            vertical-align: middle
+            img
+                margin-right auto
+                margin-left auto
+                margin-top: 1rem
         .menu
+            margin-top: 1rem
             ul
                 text-align: center
         li
@@ -112,10 +118,10 @@ header
             background-color: transparent
             border 0
             span
-                font-size: 2.2rem
+                font-size: 1.5rem
         a        
             span
-                font-size: 2.2rem
+                font-size: 1.5rem
         .menu2Mobile
             border 1px solid rgba(0, 0, 0, .2)
         .countries
@@ -158,13 +164,13 @@ header
     figure
         text-align: center
     p
-        font-size: 6rem
+        font-size: 4rem
         color white
         text-align: center
         margin 0
     .wrap
-        padding-top: 7rem
-        padding-bottom: 7rem
+        padding-top: 5rem
+        padding-bottom: 5rem
         text-align: center
         h2
             font-family: TR-Reg
@@ -177,8 +183,8 @@ header
 .stayUpdated
     text-align: center
     background-image: url("../img/pattern.png")
-    padding-top 1.5rem
-    padding-bottom: 1.5rem
+    padding-top 1rem
+    padding-bottom: 1rem
     p
         text-transform: uppercase
         font-size: 14px
@@ -188,13 +194,13 @@ header
     .social
         li
             alinear()
-            padding-right 3rem
+            padding-right 2rem
             &:last-child
                 padding-right: 0
         a
             span
                 color gris
-                font-size: 4rem
+                font-size: 3rem
 // STAY UPDATED FIN
 
 // SHOW INICIO
@@ -220,7 +226,7 @@ header
         color white
         font-size: 16px
         p
-            padding 1.5rem 0
+            padding 1rem 0
     .boxes
         div
             padding .5rem 1rem
@@ -257,6 +263,81 @@ header
         & > div
             margin-bottom: .5rem
 // TOUR FIN
+// SHOW INICIO
+
+// SHOW FIN
+.shows
+    padding-top: 4rem
+    padding-bottom: 4rem
+    h3
+        font-family: TR-Reg
+        font-size: 36px
+        text-align: center
+        position relative
+        color gris
+        margin-bottom: 2rem
+        &:after
+            display block
+            content ""
+            background-image: url("../img/divider.png")
+            background-repeat: no-repeat
+            background-position: center center
+            height 8px
+    .box
+        margin-bottom: 1.8rem
+        .texto
+            h4
+                text-transform: uppercase
+                font-weight: 700
+            .fecha
+                color gris-claro
+            p
+                margin-top: 1rem
+// MEMBER INICIO
+.member
+    padding-top: 4rem
+    padding-bottom: 4rem
+    background-image: url("../img/pattern.png")
+    .row
+        > :first-child
+            text-align: center
+            position relative
+            padding 3rem 0
+            h2
+                text-transform: uppercase
+            &:after
+                content ""
+                display block
+                width 0
+                height 0
+                border-left: 65px solid transparent
+                border-right 65px solid transparent
+                border-top 40px solid amarillo
+                position absolute
+                left 29%
+                bottom -10%
+        > :last-child
+            padding 3rem 0
+// MEMBER FIN
+
+// FOOTER INICIO
+footer
+    padding-top 2rem
+    padding-bottom: 2rem
+    .followers
+        text-align: center
+        color gris
+        text-transform: uppercase
+        font-size: .7rem
+        a
+            color black
+            font-weight: bold
+        .navigation-2
+            margin-top: .8rem
+            li
+                margin-bottom: .8rem
+// FOOTER FIN
+
 @media screen and (min-width:768px)
     header
         &.medium

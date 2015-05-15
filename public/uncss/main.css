@@ -11,7 +11,9 @@ body {
 }
 
 figure,
+footer,
 header,
+hgroup,
 nav,
 section {
   display: block;
@@ -98,7 +100,9 @@ body {
 }
 
 figure,
+footer,
 header,
+hgroup,
 nav,
 section {
   display: block;
@@ -152,14 +156,18 @@ input {
 }
 
 html {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 body {
-  font-family: OSansReg,arial;
+  font-family: "Open Sans",arial;
   font-weight: 400;
   font-size: 16px;
-  color: gris;
+  color: #393e41;
+}
+
+a {
+  color: #393e41;
 }
 
 a:link,
@@ -176,6 +184,11 @@ figure {
   padding: 0;
 }
 
+.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button {
   text-align: center;
 }
@@ -189,11 +202,12 @@ figure {
   font-size: 18px;
   border: 3px solid #393e41;
   display: inline-block;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  font-weight: 700;
   margin-left: auto;
   margin-top: 2rem;
   margin-right: auto;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .btn-trans:hover {
@@ -220,19 +234,6 @@ figure {
   background-color: #ffea00;
 }
 
-h2,
-h3 {
-  font-family: OSansBold;
-}
-
-h2 {
-  font-size: 1.375rem;
-}
-
-h3 {
-  font-size: 1.125rem;
-}
-
 ul {
   list-style: none;
 }
@@ -241,6 +242,18 @@ header .row figure {
   border-right: 1px solid rgba(0,0,0,0.2);
   height: 109px;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header .row figure img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+header .row .menu {
+  margin-top: 1rem;
 }
 
 header .row .menu ul {
@@ -261,11 +274,11 @@ header .row button {
 }
 
 header .row button span {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 header .row a span {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 header .row .menu2Mobile {
@@ -331,15 +344,15 @@ header .row .form input {
 }
 
 .banner p {
-  font-size: 6rem;
+  font-size: 4rem;
   color: #fff;
   text-align: center;
   margin: 0;
 }
 
 .banner .wrap {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
 }
 
@@ -353,8 +366,8 @@ header .row .form input {
 .stayUpdated {
   text-align: center;
   background-image: url("../img/pattern.png");
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .stayUpdated p {
@@ -370,7 +383,7 @@ header .row .form input {
 .stayUpdated .social li {
   display: inline-block;
   vertical-align: top;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 .stayUpdated .social li:last-child {
@@ -379,7 +392,7 @@ header .row .form input {
 
 .stayUpdated .social a span {
   color: #393e41;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .show {
@@ -412,7 +425,7 @@ header .row .form input {
 }
 
 .show .texto p {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .show .boxes div {
@@ -457,6 +470,104 @@ header .row .form input {
 
 .tour .row > div {
   margin-bottom: .5rem;
+}
+
+.shows {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.shows h3 {
+  font-family: TR-Reg;
+  font-size: 36px;
+  text-align: center;
+  position: relative;
+  color: #393e41;
+  margin-bottom: 2rem;
+}
+
+.shows h3:after {
+  display: block;
+  content: "";
+  background-image: url("../img/divider.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 8px;
+}
+
+.shows .box {
+  margin-bottom: 1.8rem;
+}
+
+.shows .box .texto h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.shows .box .texto .fecha {
+  color: #a9b7b7;
+}
+
+.shows .box .texto p {
+  margin-top: 1rem;
+}
+
+.member {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url("../img/pattern.png");
+}
+
+.member .row > :first-child {
+  text-align: center;
+  position: relative;
+  padding: 3rem 0;
+}
+
+.member .row > :first-child h2 {
+  text-transform: uppercase;
+}
+
+.member .row > :first-child:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-top: 40px solid #fffe00;
+  position: absolute;
+  left: 29%;
+  bottom: -10%;
+}
+
+.member .row > :last-child {
+  padding: 3rem 0;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .followers {
+  text-align: center;
+  color: #393e41;
+  text-transform: uppercase;
+  font-size: .7rem;
+}
+
+footer .followers a {
+  color: #000;
+  font-weight: bold;
+}
+
+footer .followers .navigation-2 {
+  margin-top: .8rem;
+}
+
+footer .followers .navigation-2 li {
+  margin-bottom: .8rem;
 }
 
 @media screen and (min-width:1000px) {
