@@ -1,8 +1,8 @@
 /***********************************************************
 *
 *    Autor: Héctor Sevilla
-*    Fecha: 27/11/2014
-*    Descripción: Estilo css para página web de Airpak
+*    Fecha: 12/05/2015
+*    Descripción: Testing Bootstrap
 *
 ************************************************************/
 
@@ -11,7 +11,7 @@
 @import 'nib'
 
 html
-    font-size 16px !important
+    font-size 16px 
 // COLORS
 azul-oscuro = #062138
 gris-claro = #a9b7b7
@@ -338,62 +338,53 @@ footer
                 margin-bottom: .8rem
 // FOOTER FIN
 
+
 @media screen and (min-width:768px)
+    .btn-trans
+        max-width rems(400)
     header
         &.medium
-            .wrap
-                > div
-                    display inline-block
-                    vertical-align middle
-                    margin 0 .8rem
-                .logotipo
-                    margin-bottom 0
-                .infoCliente
-                    span
-                        font-size 14px
-                .redesSociales
-                    ul
-                        margin 0
-    .servicios
-        &.medium
-            padding-left 2rem
-            padding-right 2rem
-            text-align center
-            article
-                alinear()
-                &:nth-child(odd)
-                    margin-right 5rem
-    .aliados
-        &.medium
-            ul
+            .menu
+                margin-top: 1.5rem
                 li
-                    display inline-block
-                    vertical-align middle
-                    margin 0 4rem
-    .telecomunicadoras
+                    alinear()
+                    margin 1rem
+                    a
+                        font-size: 1.5rem
+                        font-family: OSansReg
+                        font-weight: 300
+    .banner
         &.medium
-            text-align center
-            margin 2rem 0
-            ul
-                li
+            .row
+                figure
+                p
                     display inline-block
-                    vertical-align middle
-                    margin 0 2.5rem
+                    float none
+                    vertical-align: middle
+            h2
+                margin-top: 2.5rem
+    .member
+        &.medium
+            .row 
+                > :first-child:after
+                    left 41%
     footer
         &.medium
-            padding-left 2rem
-            padding-right 2rem
-            .wrap
-                text-align center
-                article
+            padding-bottom 1rem
+            .followers
+                .follow
                     alinear()
-                    text-align left
-                    width (100/3)%
-                    margin-bottom 0
-                    span
-                        margin-left 0
-                        margin-right 0
-                        font-size 14px
+                    font-size: .8rem
+                    &:first-of-type
+                        margin-right: .4rem
+                .navigation-2
+                    li
+                        alinear()
+                        margin-right 1rem
+                        &last-child
+                            margin-right: 0
+                        a
+                            font-size: 1rem
 
 @media screen and (min-width:1000px)
     .wrap
@@ -402,67 +393,14 @@ footer
         width rems(940)
     header
         &.large
-            text-align left
-            .wrap
-                .logotipo
-                .redesSociales
-                    margin 0
-                    width 25%
-                .infoCliente
-                    margin 0
-                    text-align center
-                    width 49%
-                .redesSociales
-                    text-align right
-    .servicios
-        &.large
-            article
-                margin-right 1.7rem !important
-                &:nth-child(3n + 3)
-                    margin-right 0 !important
-    section
-        &.large
-            .texto
-            ul
-                padding 0 6rem
-                font-size rems(14)
+            .menu
                 li
-                    margin .8rem
-                    li
-                        margin 0
-            h3
-                margin 3rem 0
-                span
-                    display inline-block
-                    vertical-align middle
-            .icon-recarga
-                display inline-block
-    .banner-principal
-        &.large
-            text-align center
-            box-sizing border-box
-            height rems(250)
-            hgroup
-            .imagen
-                display inline-block
-                vertical-align middle
-            hgroup
-                text-align left
-        &.agencias
-            .wrap
-                padding-top 3rem
-
-    .aliados
-        &.large
-            ul
-                li
-                    margin 0 2rem
-    footer
-        &.large
-            h3
-                text-align center
-            ul
-                padding-left 5rem
+                    &:first-child
+                        margin-left: 0
+                    &:last-child
+                        margin-right: 0
+                    a
+                        font-size: 1.2rem
 
 
 

@@ -27,18 +27,18 @@
 <div class="container-fluid">
     
     <!-- INICIO CABECERA -->
-    <header>
+    <header class="medium large">
         <div class="row">
             <!-- LOGOTIPO INICIO -->
-            <figure class="col-xs-4">
+            <figure class="col-xs-4 col-sm-2 col-md-1">
                 <img class="img-responsive"  src="img/logotipo.png" height="70" width="70" alt="">
                 
             </figure>
             <!-- LOGOTIPO FIN -->
             <!-- NAVEGACION INICIO -->
-            <nav class="menu col-xs-8">
+            <nav class="menu col-xs-8 col-sm-10 col-md-7">
                 <ul>
-                    <li><a href="">take action</a></li>
+                    <li><a href="">take action</a></li> 
                     <li><a href="">about one</a></li>
                     <li><a href="">the issues</a></li>
                     <li><a href="">blog</a></li>
@@ -46,7 +46,7 @@
             </nav><!-- NAVEGACION PRINCIPAL FIN -->
             
 
-            <div class="cajaBusqueda col-xs-12">
+            <div class="cajaBusqueda col-xs-12 col-md-4">
                 <div class="row">
                     <div class="menu2Mobile col-xs-2">
                         <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,6 +60,7 @@
 
                     <!-- INICIO COUNTRIES -->
                     <div class="countries col-xs-2">
+                        <div class="hidden-md">
                         <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="fa fa-globe"></span>
                         </button>
@@ -71,11 +72,12 @@
                             <li><a href="#">netherlands</a></li>
 
                         </ul>
+                        </div>
                     </div>
                     <!-- FIN COUNTRIES -->
 
                     <!-- INICIO USER -->
-                    <div class="user col-xs-2">
+                    <div class="user col-xs-2 hidden-md">
                         <a href="">
                             <span class="glyphicon glyphicon-user"></span>
                         </a>
@@ -105,15 +107,21 @@
 
 </div><!-- FIN CONTENEDOR GENERAL -->
 <!-- BANNER PRINCIPAL INICIO -->
-    <section class="banner">
+    <section class="banner medium">
         <div class="wrap">
-            <figure class=" logo-banner">
+            <div class="container-fluid">
+                <div class="row">
+                <figure class="logo-banner col-sm-5">
                 <img src="img/logo-main-banner.png" height="196" width="196" alt="">
             </figure>
-            <p class="plus">+</p>
-            <figure class="logoU2">
+            <p class="plus col-sm-2">+</p>
+            <figure class="logoU2 col-sm-5">
                 <img src="img/ut-logo.png" height="151" width="230" alt="">
-            </figure>
+            </figure>        
+
+                </div>
+            </div>
+            
             <h2>together this summer!</h2>
         </div>
     </section>
@@ -205,7 +213,7 @@
 
     <!-- TOUR INICIO -->
     <section class="tour">
-        <div class="container-fluid">
+        <div class="container-fluid wrap">
             <h3>#ONEonTour</h3>
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
@@ -285,7 +293,7 @@
 
 
     <!-- MEMBER INICIO -->
-    <section class="member">
+    <section class="member medium">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 yellow-box ">
@@ -303,10 +311,10 @@
     <!-- MEMBER FIN -->
 
     <!-- FOOTER INICIO -->
-    <footer>
+    <footer class="medium">
         <div class="container-fluid">
             <div class="row followers">
-                <div class="col-xs-12 ">
+                <div class="col-xs-12 col-md-6">
                     <p class="follow">
                         <span class="counted">2000</span> Followers
                         <a href="" class="icono">
@@ -327,7 +335,7 @@
                 </div>
                 
                 
-                <div class="col-xs-12 navigation-2">
+                <div class="col-xs-12 col-md-6 navigation-2">
                     <ul>
                         <li><a href="">Jobs</a></li>
                         <li><a href="">Unsubscribe</a></li>
